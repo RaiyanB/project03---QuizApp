@@ -1,0 +1,36 @@
+/* General page styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Center and constrain app layout */
+  #app {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  /* Feedback message styling */
+  .correct-msg {
+    color: green;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .wrong-msg {
+    color: red;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  /* Scoreboard area */
+  .scoreboard {
+    margin-top: 20px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+  }
