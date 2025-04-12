@@ -1,36 +1,69 @@
-/* General page styling */
 body {
-    background-color: #f8f9fa;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 20px;
-  }
-  
-  /* Center and constrain app layout */
-  #app {
-    max-width: 600px;
-    margin: auto;
-  }
-  
-  /* Feedback message styling */
-  .correct-msg {
-    color: green;
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-  
-  .wrong-msg {
-    color: red;
-    font-weight: bold;
-    font-size: 1.1rem;
-  }
-  
-  /* Scoreboard area */
-  .scoreboard {
-    margin-top: 20px;
-    font-size: 1rem;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #e9ecef;
-    border-radius: 8px;
-  }
+  background: linear-gradient(135deg, #74ABE2, #5563DE);
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* App container styling */
+#app {
+  max-width: 600px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+/* Header and form elements */
+h1, h2, h3 {
+  color: #333;
+  font-weight: 600;
+}
+
+input, select, button {
+  font-size: 1rem;
+}
+
+/* Buttons */
+.btn {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+}
+
+/* Feedback messages */
+.correct-msg {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.wrong-msg {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+/* Scoreboard styling */
+.scoreboard {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f1f3f5;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+/* Additional spacing */
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.my-3 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
