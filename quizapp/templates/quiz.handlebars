@@ -1,6 +1,5 @@
 <div class="container mt-4">
-  <h3 class="mb-3">Question {{index}} of {{total}}</h3>
-
+  <h3>Question {{index}} of {{total}}</h3>
   <p class="lead">{{question.text}}</p>
 
   {{#if (eq question.type "multiple-choice")}}
@@ -12,13 +11,25 @@
   {{/if}}
 
   {{#if (eq question.type "narrative")}}
-    <input type="text" id="narrativeInput" class="form-control my-3" placeholder="Type your answer" />
-    <button class="btn btn-primary" id="submitNarrative">Submit</button>
+    <div class="my-3">
+      <input type="text" id="narrativeInput" class="form-control" placeholder="Type your answer">
+      <button class="btn btn-primary mt-2" id="submitNarrative">Submit Answer</button>
+    </div>
+  {{/if}}
+
+  {{#if (eq question.type "image")}}
+    <div class="d-flex flex-wrap justify-content-center gap-2 my-3">
+      {{#each question.images}}
+        <button class="btn btn-outline-secondary image-btn" data-answer="{{correct}}">
+          <img src="{{url}}" alt="Option image" style="max-width: 100px; max-height: 100px;">
+        </button>
+      {{/each}}
+    </div>
   {{/if}}
 
   <!-- Scoreboard -->
-  <div class="scoreboard mt-4">
+  <div class="scoreboard">
     <span>Score: {{score}}</span>
-    <span>Time: {{elapsed}}s</span>
+    <span>Question: {{index}}/{{total}}</span>
   </div>
 </div>
