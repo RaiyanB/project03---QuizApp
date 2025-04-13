@@ -1,6 +1,4 @@
-// js/main.js
 
-// Register Handlebars helper for equality checking (used in templates)
 Handlebars.registerHelper("eq", function (a, b) {
   return a === b;
 });
@@ -10,7 +8,7 @@ let selectedQuizId = null;
 let currentQuestionIndex = 0;
 let score = 0;
 
-// Load home view on DOMContentLoaded
+
 document.addEventListener("DOMContentLoaded", () => {
   getQuizzes().then((quizzes) => {
     renderTemplate("home", { quizzes });
@@ -66,7 +64,7 @@ function loadNextQuestion() {
           }
         });
       });
-      // For narrative questions
+      
       const narrativeSubmit = document.getElementById("submitNarrative");
       if (narrativeSubmit) {
         narrativeSubmit.addEventListener("click", () => {
@@ -83,10 +81,10 @@ function loadNextQuestion() {
           }
         });
       }
-      // For image-based questions
+     
       document.querySelectorAll(".image-btn").forEach((button) => {
         button.addEventListener("click", () => {
-          // The data-answer attribute is "true" if this image is correct.
+          
           const selectedAnswer = button.dataset.answer;
           if (selectedAnswer === "true") {
             score++;
