@@ -48,9 +48,9 @@ const mockData = {
         type: "image",
         text: "Select the JavaScript logo from the options below.",
         images: [
-          { url: "./images/js-logo.png", correct: true },
-          { url: "./images/python-logo.png", correct: false },
-          { url: "./images/java-logo.png", correct: false }
+          { url: "quizapp/images:/js-logo.png", correct: true },
+          { url: "quizapp/images:/python-logo.png", correct: false },
+          { url: "quizapp/images:/java-logo.png", correct: false }
         ],
         feedback: "The JavaScript logo is the one with the recognizable 'JS' symbol."
       }
