@@ -6,7 +6,7 @@ body {
   padding: 20px;
 }
 
-/* App container styling */
+
 #app {
   max-width: 600px;
   margin: auto;
@@ -16,7 +16,7 @@ body {
   padding: 20px;
 }
 
-/* Header and form elements */
+
 h1, h2, h3 {
   color: #333;
   font-weight: 600;
@@ -26,7 +26,7 @@ input, select, button {
   font-size: 1rem;
 }
 
-/* Buttons */
+
 .btn {
   transition: all 0.2s ease-in-out;
 }
@@ -35,7 +35,7 @@ input, select, button {
   transform: scale(1.02);
 }
 
-/* Feedback messages */
+
 .correct-msg {
   color: #28a745;
   font-weight: bold;
@@ -47,7 +47,7 @@ input, select, button {
   font-weight: bold;
 }
 
-/* Scoreboard styling */
+
 .scoreboard {
   margin-top: 20px;
   padding: 10px;
@@ -58,7 +58,7 @@ input, select, button {
   font-weight: 500;
 }
 
-/* Additional spacing */
+
 .mt-5 {
   margin-top: 3rem !important;
 }
