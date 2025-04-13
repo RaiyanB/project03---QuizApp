@@ -33,24 +33,19 @@ const mockData = {
       {
         id: 104,
         type: "multiple-choice",
-        text: "Which of the following best describes a closure in JavaScript?",
-        options: [
-          "A function that remembers its lexical scope",
-          "A function that is called immediately after declaration",
-          "A function that doesn't require parameters",
-          "A function that returns a promise"
-        ],
-        answer: "A function that remembers its lexical scope",
-        feedback: "A closure is a function that retains access to its lexical scope, even when executed outside that scope."
+        text: "Which operator checks for strict equality (value and type)?",
+        options: ["==", "===", "=", "!=="],
+        answer: "===",
+        feedback: "The strict equality operator is ===."
       },
       {
         id: 105,
         type: "image",
         text: "Select the JavaScript logo from the options below.",
         images: [
-          { url: "quizapp/images:/js-logo.png", correct: true },
-          { url: "quizapp/images:/python-logo.png", correct: false },
-          { url: "quizapp/images:/java-logo.png", correct: false }
+          { url: "./images/js-logo.png", correct: true },
+          { url: "./images/python-logo.png", correct: false },
+          { url: "./images/java-logo.png", correct: false }
         ],
         feedback: "The JavaScript logo is the one with the recognizable 'JS' symbol."
       }
@@ -81,24 +76,22 @@ const mockData = {
       },
       {
         id: 204,
-        type: "multiple-choice",
-        text: "Which of the following best describes a Python generator?",
-        options: [
-          "A function that returns a list",
-          "A function that computes values and returns an iterator using the 'yield' keyword",
-          "A function that creates a dictionary",
-          "None of the above"
-        ],
-        answer: "A function that computes values and returns an iterator using the 'yield' keyword",
-        feedback: "Generators use the 'yield' keyword to return an iterator, which is more memory efficient than returning a list."
+        type: "narrative",
+        text: "What symbol is used to start a comment in Python?",
+        answer: "#",
+        feedback: "The '#' symbol is used for comments in Python."
       },
+      // NEW: Image-based question for the Python quiz
       {
         id: 205,
-        type: "multiple-choice",
-        text: "Which method is used to add an element to the end of a Python list?",
-        options: ["append()", "add()", "push()", "insert()"],
-        answer: "append()",
-        feedback: "append() is the method used to add an element to a Python list."
+        type: "image",
+        text: "Select the Python logo from the options below.",
+        images: [
+          { url: "./images/python-logo.png", correct: true },
+          { url: "./images/js-logo.png", correct: false },
+          { url: "./images/java-logo.png", correct: false }
+        ],
+        feedback: "The Python logo is the one with the blue and yellow design typically featuring the Python snake."
       }
     ]
   }
@@ -120,5 +113,4 @@ function getQuestion(quizId, questionIndex) {
     }, 300);
   });
 }
-
 
