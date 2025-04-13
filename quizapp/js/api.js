@@ -33,10 +33,15 @@ const mockData = {
       {
         id: 104,
         type: "multiple-choice",
-        text: "Which operator checks for strict equality (value and type)?",
-        options: ["==", "===", "=", "!=="],
-        answer: "===",
-        feedback: "The strict equality operator is ===."
+        text: "Which of the following best describes a closure in JavaScript?",
+        options: [
+          "A function that remembers its lexical scope",
+          "A function that is called immediately after declaration",
+          "A function that doesn't require parameters",
+          "A function that returns a promise"
+        ],
+        answer: "A function that remembers its lexical scope",
+        feedback: "A closure is a function that retains access to its lexical scope, even when executed outside that scope."
       },
       {
         id: 105,
@@ -76,10 +81,16 @@ const mockData = {
       },
       {
         id: 204,
-        type: "narrative",
-        text: "What symbol is used to denote a comment in Python?",
-        answer: "#",
-        feedback: "The '#' symbol is used for comments in Python."
+        type: "multiple-choice",
+        text: "Which of the following best describes a Python generator?",
+        options: [
+          "A function that returns a list",
+          "A function that computes values and returns an iterator using the 'yield' keyword",
+          "A function that creates a dictionary",
+          "None of the above"
+        ],
+        answer: "A function that computes values and returns an iterator using the 'yield' keyword",
+        feedback: "Generators use the 'yield' keyword to return an iterator, which is more memory efficient than returning a list."
       },
       {
         id: 205,
@@ -109,4 +120,5 @@ function getQuestion(quizId, questionIndex) {
     }, 300);
   });
 }
-  
+
+
